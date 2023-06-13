@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang web của bạn</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+
+	<style>
+		body {
+			background-image: url("../Images/8.png");
+			font-family: 'Times New Roman', Times, serif, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #f1f1f1;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		#logo {
+			width: 100px;
+			height: 100px;
+			margin-bottom: 10px;
+		}
+		
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		
+		.form-container {
+			background-color: rgb(22, 173, 219);
+			padding: 20px;
+			border-radius: 5px;
+		}
+		
+		.form-container form {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.form-container input[type="text"],
+		.form-container input[type="password"],
+		.form-container input[type="submit"] {
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+		}
+		
+		.form-container input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+		}
+		
+		.form-container input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 style="text-align: center; font-family: Dancing Script; color: rgb(255, 82, 33); font-size: 50px">Trang web của bạn</h1>
+
+	<div class="container">
+		<div class="form-container">
+			<form>
+				<input type="text" placeholder="Tên đăng nhập" required>
+				<input type="password" placeholder="Mật khẩu" required>
+				<input type="submit" value="Đăng nhập">
+			</form>
+			<p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+		</div>
+	</div>
+</body>
+</html>
